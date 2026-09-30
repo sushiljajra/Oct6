@@ -1,0 +1,11 @@
+services:
+  jenkins:
+    image: jenkins/jenkins:latest
+    ports:
+      - "8000:8080"
+    networks:
+      - mynetwork1 
+volumes:
+  myvolume1:
+networks:
+  mynetwork1:
